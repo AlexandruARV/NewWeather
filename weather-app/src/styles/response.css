@@ -1,0 +1,82 @@
+@media screen and (max-width: 112em) {
+  html {
+    font-size: 53%;
+  }
+  .main {
+  }
+
+  .grid-format {
+    grid-template-columns: 50% 50%;
+  }
+  .box-sunset-sunrise,
+  .air-quality-index {
+    width: 80%;
+  }
+  .measurements-box {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 100em) {
+  html {
+    font-size: 55%;
+  }
+  .all-content-container {
+    column-gap: 6rem;
+  }
+
+  .unit {
+    font-size: 2rem;
+  }
+
+  .slides {
+    width: 58vw;
+  }
+  .measurement-flex > span {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 88em) {
+  .slides {
+    width: 57vw;
+  }
+  .today-forecast {
+    height: 22rem;
+  }
+  .list-today-forecast {
+    width: 9vw;
+  }
+}
+
+/* @media screen and (max-width: 76em) {
+  html {
+    font-size: 62.5%;
+  }
+} */
+
+@media screen and (max-width: 62.5em) {
+  .all-content-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 6rem;
+  }
+  .main-container {
+    width: 70vw;
+  }
+
+  .aside-container {
+    width: 70vw;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .aside {
+    margin: 0;
+  }
+  .weather-now {
+    height: 100%;
+  }
+  .forecast {
+    display: none;
+  }
+}

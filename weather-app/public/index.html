@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/src/styles/index.css">
+    <link rel="stylesheet" href="/src/styles/response.css">
+    <title>Weather App</title>
+</head>
+<script defer type="module" src="/src/scripts/index.js"></script>
+
+<body>
+
+    <header class="header">
+        <div>Weather io</div>
+        <input class="input-city" placeholder="Search city...">
+        <button class="location-btn">Current location</button>
+    </header>
+    <div class="all-content-container">
+        <div class="aside-container">
+            <aside class="aside weather-now">
+                <div>Now</div>
+                <div class="temperature">
+                    <span data-current-temperature_2m>5℃</span>
+                    <img class="img" data-current-icon>
+                </div>
+
+                <div data-current-sky>Broken clouds</div>
+                <div class="brake"></div>
+                <div class="current-date"></div>
+                <div class="location" data-current-location>London, GB</div>
+            </aside>
+            <div class="forecast">5 Days forecast</div>
+            <aside class="aside weather-forecast">
+
+
+
+            </aside>
+        </div>
+        <div class="main-container">
+            <main class="main">
+                <h3>Todays Highlights</h3>
+                <div class="grid-format">
+                    <div class="air-quality-index">
+                        <div>Air quality index</div>
+                        <div class="air-quality-flex">
+                            <img class="icon" src="./icons/wind.svg">
+                            <div>DEWP
+                                <span data-current-dew_point_2m>33</span>
+                            </div>
+                            <div>
+                                ET
+                                <span data-current-evapotranspiration>33</span>
+                            </div>
+                            <div>
+                                SOIL
+                                <span data-current-soil_temperature_54cm>33</span>
+                            </div>
+                            <div>VPD
+                                <span data-current-vapour_pressure_deficit>33</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box-sunset-sunrise">
+                        <div>Sunrise & sunset</div>
+                        <div class="sunrise-sunset-flex">
+                            <img class="icon" src="./icons/brightness.svg">
+                            <div>Sunrise
+                                <span data-current-sunrise> 6:30</span>
+                            </div>
+                            <img class="icon" src="./icons/moon.svg">
+                            <div>sunset
+                                <span data-current-sunset> 16:30</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="measurements-box">
+                        <div class="unity-box">
+                            <div>humidity</div>
+                            <div class="measurement-flex">
+                                <img class="icon" src="./icons/raindrops-alt.svg">
+                                <span data-current-relative_humidity_2m>99%</span>
+                            </div>
+                        </div>
+
+                        <div class="unity-box">
+                            <div>Visibility</div>
+                            <div class="measurement-flex">
+                                <img class="icon" src="./icons/eye.svg">
+                                <span data-current-visibility>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="measurements-box">
+                        <div class="unity-box">
+                            <div>Presure</div>
+                            <div class="measurement-flex">
+                                <img class="icon" src="./icons/compress-v.svg">
+                                <span data-current-surface_pressure>99%</span>
+                            </div>
+                        </div>
+
+                        <div class="unity-box">
+                            <div>Feels like</div>
+                            <div class="measurement-flex">
+                                <img class="icon" src="./icons/temperature-three-quarter.svg">
+                                <span data-current-apparent_temperature>99%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+
+            <nav class="today-forecast">
+                <button class="btn btn-left"> <img class="icon" src="./icons/angle-double-left.svg"></button>
+                <div class="slides">
+
+
+                </div>
+                <button class="btn btn-right"><img class="icon" src="./icons/angle-double-right.svg"></button>
+            </nav>
+        </div>
+    </div>
+</body>
+
+</html>
