@@ -374,7 +374,17 @@ Spacing system
     transform: translateX(0px);
   }
 }
-/* .today-forecast {
+
+@keyframes slideRight {
+  from {
+    transform: translateX(400px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.today-forecast {
   animation-name: slideUp;
   animation-duration: 1.5s;
   animation-timing-function: ease-out;
@@ -389,4 +399,4 @@ Spacing system
   animation-name: slideLeft;
   animation-duration: 1.5s;
   animation-timing-function: ease-out;
-} */
+}
