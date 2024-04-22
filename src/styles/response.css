@@ -117,6 +117,17 @@
     font-size: 5rem;
     width: 45rem;
   }
+  .temperature {
+    column-gap: 15rem;
+    font-size: 10rem;
+  }
+  .brake {
+    width: 95%;
+  }
+  .current-date,
+  .location {
+    font-size: 3rem;
+  }
 
   .all-content-container {
     margin-top: 22rem;
@@ -143,6 +154,9 @@
     height: 100%;
     width: 150rem;
   }
+  .weather-now > div:first-child {
+    font-size: 5rem;
+  }
   .weather-forecast {
     width: 50rem;
     height: 100%;
@@ -150,5 +164,13 @@
   .forecast {
     display: none;
     width: 0px;
+  }
+  .forecast-list {
+    font-size: 3rem;
+    margin-top: 1.5rem;
+  }
+
+  .forecast-list > li:first-child {
+    font-size: 4.5rem;
   }
 }
