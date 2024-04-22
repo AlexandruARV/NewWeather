@@ -27,6 +27,7 @@
     font-size: 2rem;
   }
   .main-container {
+    row-gap: 5rem;
     width: 68vw;
   }
   .main {
@@ -103,13 +104,15 @@
   }
 
   .header {
-    height: 15rem;
-    font-size: 5rem;
+    height: 20rem;
+    font-size: 6rem;
   }
   .input-city {
     font-size: 3rem;
+    padding: 2.5rem;
   }
   .location-btn {
+    padding: 2.5rem;
     font-size: 3rem;
   }
 
@@ -130,7 +133,7 @@
   }
 
   .all-content-container {
-    margin-top: 22rem;
+    margin-top: 25rem;
     grid-template-columns: 1fr;
     justify-items: center;
     row-gap: 6em;
@@ -172,5 +175,70 @@
 
   .forecast-list > li:first-child {
     font-size: 4.5rem;
+  }
+
+  /* MAIN */
+  .main-container {
+    height: 200dvh;
+  }
+  .main {
+    height: 132rem;
+  }
+  .grid-format {
+    font-size: 3.5rem;
+    grid-template-columns: 100%;
+    height: 90%;
+  }
+  .icon {
+    width: 10rem;
+  }
+  .box-sunset-sunrise,
+  .air-quality-index {
+    height: 25rem;
+  }
+  .main > h3:first-child {
+    font-size: 4rem;
+    margin: 2rem 2rem;
+  }
+
+  .air-quality-flex > div > span,
+  .sunrise-sunset-flex > div > span {
+    font-size: 5rem;
+  }
+
+  .measurements-box {
+    height: 25rem;
+    width: 80%;
+  }
+  .unity-box {
+    max-width: 50rem;
+  }
+  .measurements-box > div {
+    width: 33rem;
+  }
+
+  .measurement-flex > span {
+    font-size: 7rem;
+  }
+  .measurements-box > div {
+    padding: 4rem;
+  }
+  .unit {
+    font-size: 5rem;
+  }
+
+  /* forecast hourly */
+  .today-forecast {
+    height: 40rem;
+  }
+  .slides {
+    width: 85%;
+  }
+  .list-today-forecast {
+    width: 20rem;
+    font-size: 4.5rem;
+  }
+  .forecast-img {
+    width: 13rem;
   }
 }
