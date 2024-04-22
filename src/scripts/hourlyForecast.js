@@ -51,9 +51,8 @@ function setParameters(currParam) {
     "apparent_temperature"
   ).innerHTML = `${currParam.apparent_temperature}<span class="unit">℃</span>`;
 }
-
+let interval;
 function sliderEffect() {
-  let interval;
   let curSlide = 0;
 
   const slides = document.querySelectorAll(".list-today-forecast");
@@ -89,20 +88,19 @@ function sliderEffect() {
     clearInterval(interval);
     slides.forEach((el) => (el.style.transition = `transform 0.5s ease`));
   }
-  let elem = 1;
 
-  if (interval) stopSlider();
+  let elem = 1;
+  stopSlider();
 
   function startInterval() {
     interval = setInterval(() => {
+      slides.forEach((e) => (e.style.transition = `transform 5s linear`));
       curSlide = curSlide + elem;
       console.log(curSlide);
 
-      slides.forEach((e) => (e.style.transition = `transform 5s linear`));
-
-      if (curSlide === Math.round(maxSlide - 6)) {
+      if (curSlide >= Math.round(maxSlide - 6)) {
         elem = -1;
-      } else if (curSlide === 0) {
+      } else if (curSlide <= 1) {
         elem = 1;
       }
       slides.forEach((e, i) => {

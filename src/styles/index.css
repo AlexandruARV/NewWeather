@@ -36,8 +36,8 @@ Spacing system
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 8.6rem;
-  background-color: rgb(40, 39, 39);
+  height: 7.5rem;
+  background-color: rgba(30, 29, 37, 1);
 }
 
 .header > div {
@@ -45,7 +45,7 @@ Spacing system
 }
 
 .all-content-container {
-  margin-top: 12rem;
+  margin-top: 10rem;
   display: grid;
   grid-template-columns: 0.6fr 1fr;
   column-gap: 10rem;
@@ -299,6 +299,14 @@ Spacing system
   width: 60vw;
   overflow: hidden;
   height: 100%;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 10%,
+    white 90%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 
 .list-today-forecast {
@@ -339,3 +347,46 @@ Spacing system
 .btn-right {
   border-radius: 0rem 3rem 3rem 0rem;
 }
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(-400px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-600px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(400px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+/* .today-forecast {
+  animation-name: slideUp;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+}
+.main {
+  animation-name: slideDown;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+}
+
+.aside-container {
+  animation-name: slideLeft;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+} */

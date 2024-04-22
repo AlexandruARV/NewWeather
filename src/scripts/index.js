@@ -35,6 +35,7 @@ const enterCity = document.querySelector(".input-city");
 enterCity.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
     getWeather(enterCity.value);
+    enterCity.value = "";
   }
 });
 

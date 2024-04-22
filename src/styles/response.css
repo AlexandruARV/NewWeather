@@ -2,8 +2,6 @@
   html {
     font-size: 53%;
   }
-  .main {
-  }
 
   .grid-format {
     grid-template-columns: 50% 50%;
@@ -28,7 +26,30 @@
   .unit {
     font-size: 2rem;
   }
+  .main-container {
+    width: 68vw;
+  }
+  .main {
+    width: 100%;
+    height: 42rem;
+    padding-bottom: 1rem;
+  }
 
+  .sunrise-sunset-flex,
+  .air-quality-flex {
+    border-top: 0.5rem;
+  }
+  .aside-container {
+    row-gap: 2rem;
+  }
+  .aside {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+  .today-forecast {
+    width: 100%;
+    height: 20rem;
+  }
   .slides {
     width: 58vw;
   }
@@ -38,14 +59,35 @@
 }
 
 @media screen and (max-width: 88em) {
+  .all-content-container {
+    column-gap: 4rem;
+  }
+  .aside {
+    max-width: 33rem;
+  }
+
+  .weather-forecast {
+    width: 31rem;
+  }
+
   .slides {
     width: 57vw;
   }
-  .today-forecast {
-    height: 22rem;
+  .measurements-box {
+    column-gap: 2rem;
   }
+
   .list-today-forecast {
     width: 9vw;
+  }
+
+  .sunrise-sunset-flex > div > span,
+  .air-quality-flex > div > span {
+    margin-top: 0.5rem;
+    font-size: 2.5rem;
+  }
+  .measurement-flex > span {
+    font-size: 2.5rem;
   }
 }
 
@@ -55,14 +97,17 @@
   }
 } */
 
-@media screen and (max-width: 62.5em) {
+@media screen and (max-width: 70em) {
+  html {
+    font-size: 62.5%;
+  }
   .all-content-container {
     grid-template-columns: 1fr;
     justify-items: center;
     row-gap: 6rem;
   }
   .main-container {
-    width: 70vw;
+    width: 100rem;
   }
 
   .aside-container {
