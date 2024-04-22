@@ -99,29 +99,56 @@
 
 @media screen and (max-width: 70em) {
   html {
-    font-size: 62.5%;
+    font-size: 50%;
   }
+
+  .header {
+    height: 15rem;
+    font-size: 5rem;
+  }
+  .input-city {
+    font-size: 3rem;
+  }
+  .location-btn {
+    font-size: 3rem;
+  }
+
+  .aside {
+    font-size: 5rem;
+    width: 45rem;
+  }
+
   .all-content-container {
+    margin-top: 22rem;
     grid-template-columns: 1fr;
     justify-items: center;
-    row-gap: 6rem;
+    row-gap: 6em;
   }
   .main-container {
-    width: 100rem;
+    width: 90vw;
   }
 
   .aside-container {
-    width: 70vw;
+    height: 50rem;
+    width: 90vw;
     flex-direction: row;
     justify-content: space-between;
   }
+
   .aside {
     margin: 0;
+    max-width: 50rem;
   }
   .weather-now {
+    height: 100%;
+    width: 150rem;
+  }
+  .weather-forecast {
+    width: 50rem;
     height: 100%;
   }
   .forecast {
     display: none;
+    width: 0px;
   }
 }
