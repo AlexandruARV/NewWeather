@@ -1,16 +1,17 @@
 import { icon_map } from "./mapIcons.js";
+import { getCurrentLocation } from "./location.js";
 import { setCurrentWeather } from "./curWeather.js";
 import { setDailyForecast } from "./dailyForecast.js";
 import { setHourlyForecast } from "./hourlyForecast.js";
 
-async function getWeather(city) {
+export async function getWeather(city) {
   try {
-    const res1 = await fetch(
+    const responseCordsCity = await fetch(
       `https://geocoding-api.open-meteo.com/v1/search?name=${city}&count=10&language=en&format=json`
     );
-    const data1 = await res1.json();
+    const dataCity = await responseCordsCity.json();
     const { latitude, longitude, timezone, name, country_code } =
-      data1.results[0];
+      dataCity.results[0];
 
     const res = await fetch(
       `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,relative_humidity_2m,apparent_temperature,is_day,precipitation,rain,showers,weather_code,cloud_cover,wind_speed_10m,wind_direction_10m&hourly=temperature_2m,,evapotranspiration,soil_temperature_54cm,surface_pressure,relative_humidity_2m,dew_point_2m,apparent_temperature,weather_code,cloud_cover,visibility,vapour_pressure_deficit,temperature_80m&daily=weather_code,temperature_2m_max,temperature_2m_min,sunrise,sunset,rain_sum&timeformat=unixtime&timezone=${timezone}`
@@ -62,3 +63,5 @@ function hourlyWeather(hourly) {
     })
     .slice(indexDateNow);
 }
+
+getCurrentLocation();

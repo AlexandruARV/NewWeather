@@ -51,7 +51,9 @@ function setParameters(currParam) {
     "apparent_temperature"
   ).innerHTML = `${currParam.apparent_temperature}<span class="unit">℃</span>`;
 }
+
 let interval;
+
 function sliderEffect() {
   let curSlide = 0;
 
@@ -96,8 +98,6 @@ function sliderEffect() {
     interval = setInterval(() => {
       slides.forEach((e) => (e.style.transition = `transform 5s linear`));
       curSlide = curSlide + elem;
-      console.log(curSlide);
-
       if (curSlide >= Math.round(maxSlide - 6)) {
         elem = -1;
       } else if (curSlide <= 1) {

@@ -1,4 +1,5 @@
 import { getElement } from "./curWeather.js";
+
 export function setDailyForecast(data) {
   const dataDaily = dailyWeatherObject(data);
 

@@ -241,15 +241,4 @@
   .forecast-img {
     width: 13rem;
   }
-
-  .aside-container {
-    animation-name: slideRight;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-out;
-  }
-  .main {
-    animation-name: slideLeft;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-out;
-  }
 }
